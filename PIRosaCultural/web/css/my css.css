@@ -1,0 +1,66 @@
+/* Container com ponta */
+/*
+dar espaço entre a nav e o container
+section {
+    padding: 5% 0;
+}*/
+
+.alizarin {
+    background:#8dc1b4;
+}
+
+.dl .discount {
+    min-height: 50px;
+    position: relative;
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 15px 0;
+    color: white;
+}
+
+.dl .discount:after { /* pontinha*/
+    content: " ";
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    position: absolute;
+    bottom: -20px;
+    left: 20%;
+}
+
+.dl .discount.alizarin:after {
+    border-top: 20px solid #8dc1b4;
+}
+
+.topo{
+    background: #f5eedc;
+    text-align: center;
+}
+
+.h1{
+  font-size: 30px;
+}
+
+.tab{
+    background: #dd4a48;
+}
+
+.p{
+   font-size: 13px;
+} 
+
+.tamanho{
+    width:100px;
+    height:200px;
+}
+
+
+
+
+
+
+
+
+
+
+ 
