@@ -8,7 +8,9 @@ section {
 .alizarin {
     background:#8dc1b4;
 }
-
+.alizarin2{
+    background: #f5eedc;
+}
 .dl .discount {
     min-height: 50px;
     position: relative;
@@ -18,6 +20,16 @@ section {
     padding: 20px 15px 0;
     color: white;
 }
+.dl .discount2 {
+    min-height: 50px;
+    position: relative;
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 15px 0;
+    color:white;
+   
+}
 
 .dl .discount:after { /* pontinha*/
     content: " ";
@@ -25,11 +37,22 @@ section {
     border-left: 20px solid transparent;
     position: absolute;
     bottom: -20px;
-    left: 20%;
+    
+}
+.dl .discount2:after { /* pontinha*/
+    content: " ";
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    position: absolute;
+    bottom: -20px;
+    
 }
 
 .dl .discount.alizarin:after {
     border-top: 20px solid #8dc1b4;
+}
+.dl .discount2.alizarin2:after {
+    border-top: 20px solid #f5eedc;
 }
 
 .topo{
@@ -41,26 +64,77 @@ section {
   font-size: 30px;
 }
 
+
 .tab{
     background: #dd4a48;
 }
 
 .p{
-   font-size: 13px;
+   font-size: 15px;
 } 
+.p2{
+     color:#4f091d;
+     font-size: 15px;
+}
 
 .tamanho{
     width:100px;
-    height:200px;
+    height:250px;
+}
+.foot{
+    text-align: center;
+    color:#4f091d;
+}
+/* NAV*/
+
+
+nav.navbar-findcond {
+    background: #fff;
+    border-color: #ccc;
+}
+nav.navbar-findcond a {
+    color: #f14444;
+}
+nav.navbar-findcond ul.navbar-nav a {
+    color: #f14444; 
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: #fff;
+}
+nav.navbar-findcond ul.navbar-nav a:hover,
+nav.navbar-findcond ul.navbar-nav a:visited,
+nav.navbar-findcond ul.navbar-nav a:focus,
+nav.navbar-findcond ul.navbar-nav a:active {
+    background: #fff;
+}
+nav.navbar-findcond ul.navbar-nav a:hover {
+    border-color: #f14444; 
+}
+nav.navbar-findcond li.divider {
+    background: #ccc; 
+}
+nav.navbar-findcond button.navbar-toggle {
+    background: #f14444; 
+}
+nav.navbar-findcond button.navbar-toggle:hover {
+    background: #999; 
+}
+nav.navbar-findcond button.navbar-toggle > span.icon-bar {
+    background: #fff; 
+}
+nav.navbar-findcond ul.dropdown-menu {
+    background: #fff;  
+}
+nav.navbar-findcond ul.dropdown-menu > li > a {
+    color: #444; 
+}
+nav.navbar-findcond ul.dropdown-menu > li > a:hover {
+    background: #f14444;
+    color: #fff; 
+}
+nav.navbar-findcond span.badge {
+    background: #f14444;
+    font-weight: normal;
+    font-size: 11px; 
 }
 
-
-
-
-
-
-
-
-
-
- 
