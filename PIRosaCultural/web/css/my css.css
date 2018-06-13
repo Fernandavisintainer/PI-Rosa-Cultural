@@ -85,6 +85,7 @@ section {
     text-align: center;
     color:#4f091d;
 }
+
 /* NAV*/
 
 
@@ -137,4 +138,65 @@ nav.navbar-findcond span.badge {
     font-weight: normal;
     font-size: 11px; 
 }
+/*
+/* link que ainda não foi visitado */
+a {
+ text-decoration: none;
+}
+a:link {
+   color: white;
+   text-decoration: none;
+}
 
+/* link que foi visitado */
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* mouse over */
+a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* link selecionado */
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+
+/*Àrea de contato*/
+.altura{
+    min-height: 300px;
+     
+}
+.fundo{
+    background-color: #ffffff;
+    opacity: 0.8;
+    color:#666666;
+}
+.superior{
+    padding-top: 45px;
+    
+}
+.inferior{
+    padding-bottom: 45px;
+    
+}
+#margem{
+    margin-bottom: 0px;
+   }
+ body{
+    background-color:#8dc1b4 ;
+}
+.header{
+    padding-top: 100px;
+    color: #f5eedc ; 
+}
+header h1{
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-size: 47px;
+}
