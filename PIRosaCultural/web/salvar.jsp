@@ -17,6 +17,7 @@
         <link href="css/newcss.css" rel="stylesheet" type="text/css"/>
         <link href="css/my css.css" rel="stylesheet" type="text/css"/>
         <title>Obrigado por seu contato!</title>
+        <link rel="shortcut icon" href="../imgs/Rosa (2) (1).ico" type="image/x-png"/>
     </head>
     <body>
         <%

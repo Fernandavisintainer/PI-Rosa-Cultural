@@ -21,22 +21,32 @@ public class UsuarioBD {
     //lista é o vetor(falso BD)
     public static void inserir(Usuario usuario) {
         lerXml();//  lê o xml  e  preencher o vetor(lista)
+
+        //pega o ultimo usuario cadastrado 
+        int ultimaPosicao = lista.size() - 1;
+        if (ultimaPosicao >= 0) {
+            Usuario ultimoUsuario = lista.get(ultimaPosicao);
+            usuario.setCodigo(ultimoUsuario.getCodigo() + 1);
+
+        } else {
+            //se não tem ningém na lista, código é 1
+            usuario.setCodigo(1);
+        }
+
         lista.add(usuario);// add um novo Usuario no final da lista
         salvarXml();// atualiza o xml com o que tem na lista
     }
 
-    /*
-    
-    public static void alterar(Usuario usuario){
+    public static void alterar(Usuario usuario) {
         lerXml();
-        excluir(usuario.getCpf());
+        excluir(usuario.getCodigo());
         inserir(usuario);
         salvarXml();
     }
-    
-    //recebe o atributo que identifica cada objeto
+
+      //recebe o atributo que identifica cada objeto
     //da classe Usuario
-    public static void excluir(String cpf){
+    public static void excluir(int codigo){
         lerXml();
         for(int i=0; i < lista.size(); i++){
             Usuario cadaUsuario = lista.get(i);
@@ -44,35 +54,59 @@ public class UsuarioBD {
             //procura o usuario que tem o CPF igual 
             //Ã  variÃ¡vel "cpf", que tÃ¡ chegando entre
             //os parÃªnteses
-            if (cadaUsuario.getCpf().equals(cpf)){
+            if (cadaUsuario.getCodigo() == codigo){
                 lista.remove(i);
             }
         }
         salvarXml();
     }
-    public static ArrayList<Usuario> listar(){     
+    public static void alterar(Usuario usuario){
+        lerXml();
+        excluir(usuario.getCodigo());
+        inserir(usuario);
+        salvarXml();
+    }
+
+    //recebe o atributo que identifica cada objeto
+    //da classe Usuario
+    public static void excluir(int codigo) {
+        lerXml();
+        for (int i = 0; i < lista.size(); i++) {
+            Usuario cadaUsuario = lista.get(i);
+
+            //procura o usuario que tem o CPF igual 
+            //Ã  variÃ¡vel "cpf", que tÃ¡ chegando entre
+            //os parÃªnteses
+            if (cadaUsuario.getCodigo() == codigo) {
+                lista.remove(i);
+            }
+        }
+        salvarXml();
+    }
+
+    public static ArrayList<Usuario> listar() {
         lerXml();
         //retorna todos os objetos do banco de dados
         return lista;
     }
-    
-    public static Usuario getByCpf(String cpf){
+
+    public static Usuario getByNome(String nome) {
         lerXml();
         Usuario usuarioEncontrado = null;
-        for(int i=0; i < lista.size(); i++){
+        for (int i = 0; i < lista.size(); i++) {
             Usuario cadaUsuario = lista.get(i);
-            
+
             //procura o usuario que tem o CPF igual 
             //Ã  variÃ¡vel "cpf", que tÃ¡ chegando entre
             //os parÃªnteses
-            if (cadaUsuario.getCpf().equals(cpf)){
+            if (cadaUsuario.getNome().equals(nome)) {
                 usuarioEncontrado = cadaUsuario;
                 break;
             }
         }
         return usuarioEncontrado;
     }
-     */
+
     private static void lerXml() {
         File arquivo = new File(caminho + "usuarioes.xml");
         if (arquivo.exists()) {

@@ -9,6 +9,7 @@ public class Pessoa {
     private String endereco;
     private String telefone;
     private String mensagem;
+     private int codigo;
 
     public String getNome() {
         return nome;
@@ -48,6 +49,14 @@ public class Pessoa {
 
     public void setMensagem(String mensagem) {
         this.mensagem = mensagem;
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
     
     
