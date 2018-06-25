@@ -69,7 +69,7 @@
                          
 
                         </form>
-
+                         <a href="../index.jsp">Página Inicial</a>
                     </div>
                 </div>
             </div>
