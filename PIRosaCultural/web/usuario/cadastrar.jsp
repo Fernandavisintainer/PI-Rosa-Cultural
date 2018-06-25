@@ -56,6 +56,12 @@
                             </div>
                             <div class="row">
                                 <div class="col-12">
+                                    <label>E-mail</label>
+                                    <input type="email" name="email"class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
                                     <label>Mensagem</label>
                                     <textarea name="mensagem" id="mensagem" class="form-control"></textarea>
                                 </div>
@@ -66,10 +72,14 @@
                                 <center> <a href="../salvar.jsp"><input type="submit"  name="enviar" value="Salvar" class="btn btn-success" /></a> </center>
  
                             </div>
-                         
+                             <br/>
+                         <div class="container-fluid">
+                             <a href="../index.jsp">Página Inicial</a>
+                         </div>
+                            
 
                         </form>
-                         <a href="../index.jsp">Página Inicial</a>
+                         
                     </div>
                 </div>
             </div>
