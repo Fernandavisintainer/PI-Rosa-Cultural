@@ -33,70 +33,71 @@
                 <div class="row">
 
                     <div class="col-12 inferior superior " id="margem" >
-                        
+
 
                         <form name="cadastro" method="post" action="../salvar.jsp">
                             <div class="row">
                                 <div class="col-12">
                                     <label>Nome</label>
-                                    <input type="text" name="nome" class="form-control"/>
+                                    <input type="text" name="nome" class="form-control" placeholder="Nome"/>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12">
                                     <label>Endereço</label>
-                                    <input type="text" name="endereco"class="form-control"/>
+                                    <input type="text" name="endereco"class="form-control" placeholder="Rua, bairro, cidade"/>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12">
                                     <label>Telefone</label>
-                                    <input type="tel" name="telefone"class="form-control"/>
+                                    <input type="tel" name="telefone"class="form-control" placeholder="(00)00000-0000" />
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12">
                                     <label>E-mail</label>
-                                    <input type="email" name="email"class="form-control"/>
+                                    <input type="email" name="email"class="form-control" placeholder="E-mail" />
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12">
                                     <label>Mensagem</label>
-                                    <textarea name="mensagem" id="mensagem" class="form-control"></textarea>
+                                    <textarea name="mensagem" id="mensagem" class="form-control" placeholder="Sua mensagem " ></textarea>
                                 </div>
                             </div>
                             <br/>
                             <div class="container-fluid">
-                               
-                                <center> <a href="../salvar.jsp"><input type="submit"  name="enviar" value="Salvar" class="btn btn-success" /></a> </center>
- 
-                            </div>
-                             <br/>
-                         <div class="container-fluid">
-                             <a href="../index.jsp">Página Inicial</a>
-                         </div>
-                            
 
+                                <center> <a href="../salvar.jsp"><input type="submit"  name="enviar" value="Salvar" class="btn btn-success" /></a> </center>
+
+                            </div>
+                            
+                            <br/>
+                            <div class="container-fluid">
+
+                                <center> <a href="../index.jsp">Página Inicial</a> </center>
+
+                            </div>
                         </form>
-                         
+                        
                     </div>
                 </div>
             </div>
         </article>
-        
-         <footer>
+
+        <footer>
             <div>
-         
-                    <div class=" col-12 foot">
-                        <p>
-                            RosaCultural.org.br 
-                        </p>
-                        <p>&copy; FrontWeb </p>
-                    </div>
+
+                <div class=" col-12 foot">
+                    <p>
+                        RosaCultural.org.br 
+                    </p>
+                    <p>&copy; FrontWeb </p>
                 </div>
             </div>
-        </footer>
-        
-    </body>
+        </div>
+    </footer>
+
+</body>
 </html>
