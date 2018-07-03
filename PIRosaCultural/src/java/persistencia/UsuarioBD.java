@@ -60,30 +60,6 @@ public class UsuarioBD {
         }
         salvarXml();
     }
-    public static void alterar(Usuario usuario){
-        lerXml();
-        excluir(usuario.getCodigo());
-        inserir(usuario);
-        salvarXml();
-    }
-
-    //recebe o atributo que identifica cada objeto
-    //da classe Usuario
-    public static void excluir(int codigo) {
-        lerXml();
-        for (int i = 0; i < lista.size(); i++) {
-            Usuario cadaUsuario = lista.get(i);
-
-            //procura o usuario que tem o CPF igual 
-            //Ã  variÃ¡vel "cpf", que tÃ¡ chegando entre
-            //os parÃªnteses
-            if (cadaUsuario.getCodigo() == codigo) {
-                lista.remove(i);
-            }
-        }
-        salvarXml();
-    }
-
     public static ArrayList<Usuario> listar() {
         lerXml();
         //retorna todos os objetos do banco de dados

@@ -9,7 +9,17 @@ public class Pessoa {
     private String endereco;
     private String telefone;
     private String mensagem;
-     private int codigo;
+    private String email;
+    private int codigo;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+     
 
     public String getNome() {
         return nome;

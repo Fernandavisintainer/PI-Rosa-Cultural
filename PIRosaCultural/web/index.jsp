@@ -9,8 +9,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
         <script src="js/notify.min.js" type="text/javascript"></script>
-        <link href="css/my css.css" rel="stylesheet" type="text/css"/>
-        <link href="css/my css.css" rel="stylesheet" type="text/css"/>
+        
         <script src="js/Validation/jquery.validate.min.js" type="text/javascript"></script>
         <script src="js/Validation/localization/messages_pt_BR.js" type="text/javascript"></script>
         <script src="js/Validation/validacao.js" type="text/javascript"></script>
@@ -22,14 +21,16 @@
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-        <title>Associação Rosa Cultural</title>
+        <link href="css/my css.css" rel="stylesheet" type="text/css"/>
+        
+        <title>Associação Rosa Cultural</title>        
         <link rel="shortcut icon" href="imgs/Rosa (2) (1).ico" type="image/x-png"/>
     </head>
     <body>
         <div class="topo">
             <div class="row">
                 <div class="col-9">
-                    <h1>Associação Rosa Cultural</h1>
+                    <h1 id="titulo">Associação Rosa Cultural</h1>
                     <h5>ONG Cultural</h5>
                 </div>
                 <div class="col-3">

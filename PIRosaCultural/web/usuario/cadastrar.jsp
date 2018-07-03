@@ -3,12 +3,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">        
         <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <script src="../js/bootstrap.min.js" type="text/javascript"></script>
         <script src="../js/jquery.mask.min.js" type="text/javascript"></script>
         <script src="../js/notify.min.js" type="text/javascript"></script>
         <link href="../css/my css.css" rel="stylesheet" type="text/css"/>
+        
         <title>Contato</title>
         <link rel="shortcut icon" href="../imgs/Rosa (2) (1).ico" type="image/x-png"/>
     </head>
@@ -57,7 +58,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <label>E-mail</label>
-                                    <input type="email" name="email"class="form-control" placeholder="E-mail" />
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="E-mail" />
                                 </div>
                             </div>
                             <div class="row">
@@ -76,7 +77,7 @@
                             <br/>
                             <div class="container-fluid">
 
-                                <center> <a href="../index.jsp">Página Inicial</a> </center>
+                                <center> <a href="../index.jsp" id="link">Página Inicial</a> </center>
 
                             </div>
                         </form>
